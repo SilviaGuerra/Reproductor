@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head lang="es">
+	<meta charset="utf-8">
+	<title>Reproductor</title>
+	<link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<h1 style="text-align:center; color:#CC33CF;">Mi reproductor</h1>
+	</header>
+
+	<audio id="micancion">
+		<source src="musiquita/tameimpala.m4a" type="audio/mpeg">
+	</audio>
+
+	<div style="margin:200px;">
+		<input type="text" placeholder="Hola"><br>
+		<br>
+		<input type="range">
+		<br>
+		
+		<button onclick="play()" style="background-color:rgba(204,204,255, 0.3); border:0.5px">
+			<img src="imagenes/play.svg" height="50">
+		</button>
+
+		<button onclick="pausa()" style="background-color:rgba(204,204,255, 0.3); border:0.5px">
+			<img src="imagenes/pausa.svg" height="50">
+		</button>
+
+		<button onclick="volumenMas()" style="background-color:rgba(204,204,255, 0.3); border:0.5px">
+			<img src="imagenes/suma.svg" height="50">
+		</button>
+
+		<button onclick="volumenMenos()" style="background-color:rgba(204,204,255, 0.3); border:0.5px">
+			<img src="imagenes/resta.svg" height="50">
+		</button>
+	</div>
+
+
+	<script src="javascript/reproductor.js"></script>
+</body>
+</html>
